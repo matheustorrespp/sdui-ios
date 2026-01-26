@@ -1,0 +1,35 @@
+[
+    {
+        "componentType": "TITLE",
+        "content": "Titulo",
+        "fontSize": 24,
+        "color": "#FF0000"
+    },
+    {
+        "componentType": "SPACER",
+        "topSpacing": 24,
+        "bottomSpacing": 24,
+        "style": "LINE"
+    },
+    {
+        "componentType": "TITLE",
+        "content": "Subtitulo",
+        "fontSize": 12,
+        "color": "#FF00FF"
+    },
+    {
+        "componentType": "SPACER",
+        "topSpacing": 24,
+        "style": "EMPTY"
+    },
+    {
+        "componentType": "BUTTON",
+        "content": "CLIQUE AQUI",
+        "style": "SECONDARY",
+        "action": {
+            "actionType": "NAVIGATE",
+            "route": "picpay://outratela",
+            "route": "DETAIL"
+        }
+    }
+]
