@@ -31,5 +31,15 @@
             "route": "picpay://outratela",
             "route": "DETAIL"
         }
+    },
+    {
+        "componentType": "CARD",
+        "imageName": "imagem",
+        "title": "Mano Torres",
+        "text": "Strafe y bala",
+        "titleFontSize": 18,
+        "textFontSize": 14,
+        "titleColor": "#000000",
+        "textColor": "#666666"
     }
 ]

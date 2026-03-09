@@ -16,6 +16,9 @@ class ComponentFactory {
         case .title:
             guard let model = decode(TitleComponentModel.self, component: component) else { return nil }
             return TitleComponentView(model: model)
+        case .card:
+            guard let model = decode(CardComponentModel.self, component: component) else { return nil }
+            return CardComponentView(model: model)
         case .spacer:
             return nil
         case .button:
