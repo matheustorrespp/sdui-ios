@@ -42,8 +42,64 @@
         "titleColor": "#000000",
         "textColor": "#666666",
         "action": {
-            "actionType": "PRINT",
-            "content": "hello world"
+            "actionType": "NAVIGATE",
+            "route": "/detail?imageName=imagem&title=Mano Torres&text=Strafe y bala"
+        }
+    },
+    {
+        "componentType": "CARD",
+        "imageName": "imagem",
+        "title": "Café da Manhã",
+        "text": "O melhor jeito de começar o dia é com um bom café e pão na chapa",
+        "titleFontSize": 20,
+        "textFontSize": 13,
+        "titleColor": "#2C3E50",
+        "textColor": "#7F8C8D",
+        "action": {
+            "actionType": "NAVIGATE",
+            "route": "/detail?imageName=imagem&title=Café da Manhã&text=O melhor jeito de começar o dia é com um bom café e pão na chapa"
+        }
+    },
+    {
+        "componentType": "CARD",
+        "imageName": "imagem",
+        "title": "Viagem para Kyoto",
+        "text": "Templos antigos, jardins zen e a melhor comida de rua do Japão",
+        "titleFontSize": 18,
+        "textFontSize": 14,
+        "titleColor": "#1A1A2E",
+        "textColor": "#636366",
+        "action": {
+            "actionType": "NAVIGATE",
+            "route": "/detail?imageName=imagem&title=Viagem para Kyoto&text=Templos antigos, jardins zen e a melhor comida de rua do Japão"
+        }
+    },
+    {
+        "componentType": "CARD",
+        "imageName": "imagem",
+        "title": "Playlist do Finde",
+        "text": "Aquela seleção especial pra ouvir no repeat o fim de semana inteiro",
+        "titleFontSize": 16,
+        "textFontSize": 12,
+        "titleColor": "#6C3483",
+        "textColor": "#A569BD",
+        "action": {
+            "actionType": "NAVIGATE",
+            "route": "/detail?imageName=imagem&title=Playlist do Finde&text=Aquela seleção especial pra ouvir no repeat o fim de semana inteiro"
+        }
+    },
+    {
+        "componentType": "CARD",
+        "imageName": "imagem",
+        "title": "Receita de Ramen",
+        "text": "Caldo encorpado, noodles al dente e ovo molinho — impossível resistir",
+        "titleFontSize": 18,
+        "textFontSize": 14,
+        "titleColor": "#C0392B",
+        "textColor": "#E74C3C",
+        "action": {
+            "actionType": "NAVIGATE",
+            "route": "/detail?imageName=imagem&title=Receita de Ramen&text=Caldo encorpado, noodles al dente e ovo molinho — impossível resistir"
         }
     }
 ]

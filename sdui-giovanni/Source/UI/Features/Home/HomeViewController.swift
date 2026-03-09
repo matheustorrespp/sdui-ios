@@ -18,8 +18,9 @@ class HomeViewController: ComponentContainer {
         super.execute(action: action, from: component)
         switch action.actionType {
         case .navigate:
-            if let navigateAction = action as? NavigateActionModel {
-                print("navigate to: \(navigateAction.route ?? "unknown")")
+            if let navigateAction = action as? NavigateActionModel,
+               let route = navigateAction.route {
+                DeeplinkNavigator.shared.navigate(to: route)
             }
         case .print:
             if let printAction = action as? PrintActionModel {
