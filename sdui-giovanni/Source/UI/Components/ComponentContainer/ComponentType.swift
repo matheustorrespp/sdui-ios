@@ -9,4 +9,5 @@ enum ComponentType: String, Codable {
 
 enum ActionType: String, Codable {
     case navigate = "NAVIGATE"
+    case print = "PRINT"
 }

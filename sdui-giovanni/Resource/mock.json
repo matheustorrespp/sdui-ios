@@ -40,6 +40,10 @@
         "titleFontSize": 18,
         "textFontSize": 14,
         "titleColor": "#000000",
-        "textColor": "#666666"
+        "textColor": "#666666",
+        "action": {
+            "actionType": "PRINT",
+            "content": "hello world"
+        }
     }
 ]

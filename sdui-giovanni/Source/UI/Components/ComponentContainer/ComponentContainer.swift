@@ -12,6 +12,7 @@ class ComponentContainer: UIViewController {
     // MARK: - PRIVATE PROPERTIES
     
     private let componentFactory: ComponentFactory = .init()
+    private let actionFactory: ActionFactory = .init()
     
     private var components: [ComponentView] = [] {
         didSet {
@@ -59,7 +60,7 @@ class ComponentContainer: UIViewController {
     
     // MARK: - LIFE CYCLE
     
-    func execute(action: ActionType, from component: ComponentView) {
+    func execute(action: ActionModelProtocol, from component: ComponentView) {
         // SHOULD BE OVERRIDEN
     }
     
@@ -118,8 +119,8 @@ class ComponentContainer: UIViewController {
         }
     }
     
-    private func executeDefault(action: ActionType, from component: ComponentView) {
-        switch action {
+    private func executeDefault(action: ActionModelProtocol, from component: ComponentView) {
+        switch action.actionType {
 //        case .tracking:
 //            dependencies.thundera
         default:
@@ -131,7 +132,7 @@ class ComponentContainer: UIViewController {
 // MARK: - ComponentViewDelegate
 
 extension ComponentContainer: ComponentViewDelegate {
-    func didSelect(_ component: any ComponentView, with action: ActionType) {
+    func didSelect(_ component: any ComponentView, with action: ActionModelProtocol) {
         executeDefault(action: action, from: component)
     }
     

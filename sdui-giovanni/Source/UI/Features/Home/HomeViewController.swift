@@ -14,11 +14,17 @@ class HomeViewController: ComponentContainer {
         updateComponents(mock)
     }
     
-    override func execute(action: ActionType, from component: any ComponentView) {
+    override func execute(action: ActionModelProtocol, from component: any ComponentView) {
         super.execute(action: action, from: component)
-        switch action {
+        switch action.actionType {
         case .navigate:
-            print("navigate")
+            if let navigateAction = action as? NavigateActionModel {
+                print("navigate to: \(navigateAction.route ?? "unknown")")
+            }
+        case .print:
+            if let printAction = action as? PrintActionModel {
+                print(printAction.content)
+            }
         }
     }
 }

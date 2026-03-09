@@ -20,6 +20,6 @@ extension ComponentView {
 }
 
 protocol ComponentViewDelegate: UIViewController {
-    func didSelect(_ component: ComponentView, with action: ActionType)
+    func didSelect(_ component: ComponentView, with action: ActionModelProtocol)
     func componentContainer() -> ComponentContainer?
 }

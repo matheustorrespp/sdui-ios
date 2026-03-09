@@ -60,7 +60,7 @@ class TitleComponentView: UIView, ComponentView {
         ])
     }
     
-    private func doAction() {
-        delegate?.didSelect(self, with: .navigate) //model.action
-    }
+//    private func doAction() {
+//        delegate?.didSelect(self, with: .navigate) //model.action
+//    }
 }
